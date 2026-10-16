@@ -1,0 +1,345 @@
+.international-hero {
+  background:linear-gradient(180deg, #fff 0%, #f8faff 100%);
+  border-bottom:1px solid var(--border)
+}
+
+.international-hero-layout {
+  display:grid;
+  grid-template-columns:minmax(0, 1.45fr) minmax(0, 1fr);
+  gap:64px;
+  align-items:center;
+  padding-block:88px 68px
+}
+
+.hero-availability {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:25px;
+  color:#475569;
+  font-size:.73rem;
+  font-weight:500
+}
+
+.hero-availability>span {
+  width:7px;
+  height:7px;
+  flex-shrink:0;
+  border-radius:50%;
+  background:#368267
+}
+
+.international-hero-copy h1 {
+  font-size:clamp(2.4rem, 4.4vw, 3.25rem);
+  font-weight:750;
+  line-height:1.16;
+  letter-spacing:-.05em
+}
+
+.international-hero-copy h1>span {
+  display:block
+}
+
+.international-hero-copy h1 em {
+  color:var(--blue);
+  font-style:normal
+}
+
+.international-hero-role {
+  margin-top:24px;
+  color:var(--navy);
+  font-size:.96rem;
+  font-weight:500
+}
+
+.international-hero-role>span {
+  margin-inline:7px;
+  color:var(--muted)
+}
+
+.international-hero-description {
+  margin-top:20px;
+  max-width:565px;
+  font-size:.91rem;
+  line-height:1.85
+}
+
+.international-hero-actions {
+  margin-top:28px;
+  gap:12px
+}
+
+.international-hero-actions .button {
+  min-height:49px;
+  padding-inline:22px;
+  border-radius:7px
+}
+
+.international-hero-actions .secondary {
+  border-color:#c6d3e4
+}
+
+.hero-resume {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 0;
+  color:var(--navy);
+  font-size:.78rem;
+  font-weight:500
+}
+
+.hero-resume:hover {
+  color:var(--blue)
+}
+
+.international-hero-location {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:23px;
+  font-size:.73rem;
+  color:var(--muted)
+}
+
+.developer-profile {
+  width:100%;
+  max-width:410px;
+  justify-self:end;
+  border:1px solid #dce5f2;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 20px 50px #142b4910, 0 4px 12px #142b4905;
+  overflow:hidden;
+  transition:transform .25s, box-shadow .25s
+}
+
+@media(hover:hover) and (pointer:fine) {
+  .developer-profile:hover {
+    transform:translateY(-4px);
+    box-shadow:0 24px 55px #142b4918, 0 4px 12px #142b4908
+  }
+}
+
+.developer-profile-header {
+  padding:28px;
+  background:linear-gradient(125deg, var(--blue), #1944ad);
+  color:#fff
+}
+
+.developer-profile-top {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:20px
+}
+
+.developer-monogram {
+  display:grid;
+  place-items:center;
+  width:56px;
+  height:56px;
+  border:1px solid #ffffff40;
+  border-radius:12px;
+  background:#ffffff1a;
+  color:#fff;
+  font-size:1.4rem;
+  font-weight:700;
+  letter-spacing:-.04em
+}
+
+.developer-profile-header h2 {
+  color:#fff;
+  font-size:1.42rem;
+  font-weight:600;
+  letter-spacing:-.025em
+}
+
+.developer-profile-role {
+  margin-top:7px;
+  font-size:.84rem
+}
+
+.developer-profile-location {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-top:13px;
+  font-size:.69rem;
+  line-height:1.6
+}
+
+.developer-profile-areas {
+  list-style:none;
+  margin:0;
+  padding:8px 25px
+}
+
+.developer-profile-areas li {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding-block:21px
+}
+
+.developer-profile-areas li+li {
+  border-top:1px solid #edf1f7
+}
+
+.developer-area-icon {
+  display:grid;
+  place-items:center;
+  width:43px;
+  height:43px;
+  flex-shrink:0;
+  border:1px solid #e4edfc;
+  border-radius:10px;
+  background:#f1f6ff;
+  color:var(--blue)
+}
+
+.developer-profile-areas h3 {
+  font-size:.83rem;
+  font-weight:600;
+  letter-spacing:-.01em
+}
+
+.developer-profile-areas p {
+  margin-top:5px;
+  color:#64748b;
+  font-size:.7rem;
+  line-height:1.65
+}
+
+.developer-profile-footer {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:15px 25px;
+  border-top:1px solid var(--border);
+  background:#fafcff;
+  color:#475569;
+  font-size:.68rem
+}
+
+.developer-profile-footer>span {
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--blue)
+}
+
+.international-hero-highlights {
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:24px;
+  list-style:none;
+  margin:0;
+  padding:25px 0 29px;
+  border-top:1px solid var(--border)
+}
+
+.international-hero-highlights li {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#475569;
+  font-size:.73rem;
+  font-weight:500
+}
+
+.international-hero-highlights svg {
+  color:var(--blue)
+}
+
+@media(max-width:1050px) {
+  .international-hero-layout {
+    gap:34px;
+    grid-template-columns:minmax(0, 1.3fr) minmax(0, 1fr)
+  }
+  .international-hero-copy h1 {
+    font-size:2.65rem
+  }
+  .international-hero-role {
+    font-size:.85rem
+  }
+  .developer-profile-header {
+    padding:24px
+  }
+  .developer-profile-areas {
+    padding-inline:20px
+  }
+}
+
+@media(max-width:800px) {
+  .international-hero-layout {
+    grid-template-columns:minmax(0, 1fr);
+    gap:40px;
+    padding-block:52px 40px
+  }
+  .international-hero-copy h1 {
+    font-size:clamp(2rem, 5.8vw, 3.2rem)
+  }
+  .international-hero-description {
+    max-width:600px
+  }
+  .developer-profile {
+    justify-self:center
+  }
+  .international-hero-highlights {
+    grid-template-columns:minmax(0, 1fr);
+    gap:16px;
+    padding-block:24px
+  }
+  .international-hero-highlights li {
+    font-size:.77rem
+  }
+}
+
+@media(max-width:400px) {
+  .hero-availability {
+    font-size:.65rem;
+    gap:7px
+  }
+  .international-hero-copy h1 {
+    font-size:2rem
+  }
+  .international-hero-role {
+    font-size:.78rem
+  }
+  .international-hero-role>span {
+    margin-inline:3px
+  }
+  .international-hero-description {
+    font-size:.87rem
+  }
+  .international-hero-actions .button {
+    padding-inline:15px;
+    font-size:.79rem
+  }
+  .developer-profile-header {
+    padding:22px
+  }
+  .developer-profile-header h2 {
+    font-size:1.23rem
+  }
+  .developer-profile-location {
+    font-size:.65rem
+  }
+  .developer-profile-areas {
+    padding-inline:18px
+  }
+  .developer-profile-areas li {
+    gap:11px
+  }
+  .developer-profile-areas p {
+    font-size:.68rem
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .developer-profile:hover {
+    transform:none
+  }
+}
