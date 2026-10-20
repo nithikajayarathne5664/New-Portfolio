@@ -1,0 +1,60 @@
+.desktop-screenshot-slider {
+  position:relative;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface);
+}
+.desktop-screenshot-slider:focus-visible { outline:3px solid var(--blue); outline-offset:4px }
+.screenshot-viewport {
+  position:relative;
+  width:100%;
+  aspect-ratio:1534 / 816;
+  max-height:420px;
+  overflow:hidden;
+  border-radius:9px;
+  touch-action:pan-y pinch-zoom;
+}
+.screenshot-track { position:absolute; inset:0; display:flex; transition:transform 320ms ease-in-out }
+.screenshot-slide { flex:0 0 100%; min-width:0; height:100% }
+.screenshot-slide .preview-button { position:relative; height:100%; padding:0; border:0; border-radius:0 }
+.screenshot-slide .preview-button img { width:100%; height:100%; max-height:none; object-fit:contain; border-radius:0 }
+.screenshot-slide .preview-button>span {
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+  margin:0;
+  padding:4px 12px;
+  border-radius:20px;
+  background:#ffffffeb;
+  color:var(--navy);
+  white-space:nowrap;
+}
+.screenshot-slide .preview-button:focus-visible { outline-offset:-5px }
+.screenshot-arrow {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:1px solid #cbd5e1;
+  border-radius:50%;
+  background:#ffffffe0;
+  color:var(--blue);
+  font-size:1.5rem;
+  box-shadow:0 2px 10px #142b491a;
+}
+.screenshot-arrow:hover { background:white }
+.screenshot-arrow.previous { left:12px }
+.screenshot-arrow.next { right:12px }
+.screenshot-pagination { display:flex; justify-content:center; align-items:center; gap:18px; margin-top:8px; min-height:36px }
+.screenshot-dots { display:flex; align-items:center; gap:2px }
+.screenshot-dots button { display:grid; place-items:center; width:32px; height:36px; border:0; padding:0; background:transparent; border-radius:5px }
+.screenshot-dots span { width:8px; height:8px; border-radius:50%; background:#94a3b8 }
+.screenshot-dots [aria-current=true] span { background:var(--blue); box-shadow:0 0 0 3px #2563eb18 }
+.screenshot-counter { font-size:.8rem; color:var(--muted); font-variant-numeric:tabular-nums; min-width:3em }
+@media(max-width:480px) { .screenshot-arrow.previous{left:6px}.screenshot-arrow.next{right:6px}.screenshot-slide .preview-button>span{bottom:6px;font-size:.7rem;padding:2px 8px} }
+@media(prefers-reduced-motion:reduce) { .screenshot-track { transition:none } }

@@ -6,28 +6,12 @@
 .international-hero-layout {
   display:grid;
   grid-template-columns:minmax(0, 1.45fr) minmax(0, 1fr);
-  gap:64px;
+  gap:var(--layout-gap);
   align-items:center;
-  padding-block:88px 68px
+  padding-block:var(--section-space) var(--space-12)
 }
 
-.hero-availability {
-  display:flex;
-  align-items:center;
-  gap:9px;
-  margin-bottom:25px;
-  color:#475569;
-  font-size:.73rem;
-  font-weight:500
-}
 
-.hero-availability>span {
-  width:7px;
-  height:7px;
-  flex-shrink:0;
-  border-radius:50%;
-  background:#368267
-}
 
 .international-hero-copy h1 {
   font-size:clamp(2.4rem, 4.4vw, 3.25rem);
@@ -64,6 +48,10 @@
   line-height:1.85
 }
 
+.international-hero-description p+p {
+  margin-top:13px
+}
+
 .international-hero-actions {
   margin-top:28px;
   gap:12px
@@ -93,7 +81,7 @@
   color:var(--blue)
 }
 
-.international-hero-location {
+.international-hero-socials {
   display:flex;
   align-items:center;
   flex-wrap:wrap;
@@ -123,7 +111,7 @@
 }
 
 .developer-profile-header {
-  padding:28px;
+  padding:var(--card-padding);
   background:linear-gradient(125deg, var(--blue), #1944ad);
   color:#fff
 }
@@ -180,7 +168,7 @@
   display:flex;
   align-items:center;
   gap:14px;
-  padding-block:21px
+  padding-block:var(--space-4)
 }
 
 .developer-profile-areas li+li {
@@ -205,10 +193,14 @@
   letter-spacing:-.01em
 }
 
+.developer-profile-areas li>div {
+  min-width:0
+}
+
 .developer-profile-areas p {
   margin-top:5px;
   color:#64748b;
-  font-size:.7rem;
+  font-size:.73rem;
   line-height:1.65
 }
 
@@ -227,7 +219,8 @@
   width:6px;
   height:6px;
   border-radius:50%;
-  background:var(--blue)
+  background:var(--blue);
+  flex-shrink:0
 }
 
 .international-hero-highlights {
@@ -255,7 +248,7 @@
 
 @media(max-width:1050px) {
   .international-hero-layout {
-    gap:34px;
+    gap:var(--space-8);
     grid-template-columns:minmax(0, 1.3fr) minmax(0, 1fr)
   }
   .international-hero-copy h1 {
@@ -275,8 +268,8 @@
 @media(max-width:800px) {
   .international-hero-layout {
     grid-template-columns:minmax(0, 1fr);
-    gap:40px;
-    padding-block:52px 40px
+    gap:var(--space-8);
+    padding-block:var(--section-space) var(--space-8)
   }
   .international-hero-copy h1 {
     font-size:clamp(2rem, 5.8vw, 3.2rem)
@@ -298,10 +291,6 @@
 }
 
 @media(max-width:400px) {
-  .hero-availability {
-    font-size:.65rem;
-    gap:7px
-  }
   .international-hero-copy h1 {
     font-size:2rem
   }
@@ -343,3 +332,5 @@
     transform:none
   }
 }
+
+.international-hero-socials .social-links { margin-left:0 }
