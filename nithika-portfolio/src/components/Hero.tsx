@@ -38,8 +38,8 @@ export function Hero({ resumeAvailable, resumeHref, children }: HeroProps) {
           </h1>
           <p className="international-hero-role">Software Engineer <span aria-hidden="true">|</span> Full-Stack Development <span aria-hidden="true">|</span> Digital Innovation</p>
           <div className="international-hero-description">
-            <p>{profile.introduction}</p>
-            <p>I focus on understanding business requirements, developing reliable software, and continuously improving how technology supports people and operations.</p>
+            <p>I build practical software that connects business needs with reliable technology. With hands-on experience in Python, C#, Java, JavaScript and React.js, I contribute to desktop applications, web platforms and digital workflows, combining development with testing, troubleshooting and a focus on usability.</p>
+            <p>I also bring practical experience using AI applications—including ChatGPT, OpenAI Codex integrated with Visual Studio Code, Google Gemini and Claude—to develop and improve features, investigate bugs, refactor code and prepare technical documentation. Through remote collaboration with Singapore-based teams, I apply these skills to real business challenges, reviewing and testing AI-assisted work before using it.</p>
           </div>
           <div className="button-row international-hero-actions">
             <a className="button primary" href="#projects">View My Work <ArrowRight size={18} aria-hidden="true" /></a>

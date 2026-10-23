@@ -63,7 +63,8 @@
   border-radius:7px
 }
 
-.international-hero-actions .secondary {
+.international-hero-actions .secondary,
+.about-portrait-actions .secondary {
   border-color:#c6d3e4
 }
 

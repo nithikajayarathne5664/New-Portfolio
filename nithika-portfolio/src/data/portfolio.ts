@@ -6,7 +6,7 @@ export interface SkillCategory { name: string; skills: string[] }
 export const profile = {
   name: 'Nithika Minlaka Jayarathne', displayName: 'Nithika Jayarathne',
   headline: 'Software Engineer | Full-Stack Developer | Technical Solutions', location: 'Panadura, Sri Lanka',
-  introduction: 'Aspiring Software Engineer with a completed Higher National Diploma from Lithan Singapore, currently pursuing a Bachelor of Science in Computing Studies at the University of Roehampton through Lithan Singapore. Practical experience contributing to digital workflow applications and supporting Singapore-based teams.',
+  introduction: aboutIntroduction[0],
   about: aboutIntroduction,
   links: { email: 'nithikajayarathne@gmail.com', linkedin: '', github: '', resume: '' },
   phone: '+94 76 193 6395',
@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
         role: 'Software Intern', period: 'June 2024 – January 2025 (8 months)', periodConfirmed: true,
         description: 'During this internship, I contributed to improving internal efficiency and supporting digital infrastructure for client and company operations.',
         points: [
-          'Process Automation: Designed and implemented automation solutions to streamline recurring business tasks and data management workflows.',
+          'Designed and implemented automation solutions for recurring administrative processes and data-management tasks.',
           'Website Development & Management: Developed and maintained company and client websites using WordPress, including hosting management through Hostinger.',
           'Event Planning & Coordination: Assisted with company and client events, including logistics and digital promotions.',
           'Technical Support: Supported technical setup, troubleshooting, and digital tool integration.',
@@ -42,7 +42,14 @@ export const experiences: Experience[] = [
       },
     ],
   },
-  { organization: 'Thirteen Technologies', location: 'Singapore', roles: [{ role: 'Software Developer Intern', period: '1 Year and 4 Months', periodConfirmed: true, points: ['Contributed to Digital Workflow V1/V2 application development, including form-builder and workflow features.', 'Supported improvements to interface usability and modular application design.', 'Participated in workflow testing and identification of functional issues.', 'Collaborated with a software development team and gained practical development experience.'] }] },
+  { organization: 'Thirteen Technologies', location: 'Singapore', roles: [{ role: 'Software Developer Intern', period: '7 July 2025 – 8 October 2026 · Remote · Singapore', periodConfirmed: true, points: [
+    'Developed Digital Workflow V1 using C#, WPF and SQLite, supporting report submission, viewing and editing.',
+    'Implemented camera and equipment data modules, image handling and automated report-generation workflows.',
+    'Contributed to Digital Workflow V2, focusing on modular architecture, scalable layouts and improved user experience.',
+    'Created UI wireframes and prototypes using Figma and Draw.io, refining designs through testing and team feedback.',
+    'Contributed across five projects: Digital Workflow V2 Desktop, Digital Workflow V2 Website, Digital Workflow Unified, Digital Compliance and Digital Desk.',
+    'Performed functional testing, debugging and iterative improvements in collaboration with the development team.',
+  ] }] },
   { organization: 'bevoiceai', roles: [{ role: 'Technical Support Engineer — Tier 2 (Part-Time)', period: 'Started January 2026', periodConfirmed: true, points: [] }] },
 ]
 export const projects: Project[] = [
