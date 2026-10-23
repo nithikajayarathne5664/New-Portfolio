@@ -54,7 +54,7 @@ Project visuals are lightweight CSS/SVG illustrations, not internal application 
 
 ## GitHub Pages
 
-Use repository **nithikajayarathne5664.github.io** with the contents of this project at the repository root (not inside another `nithika-portfolio` folder). Keep Vite `base: '/'`.
+Use repository **nithikajayarathne5664/New-Portfolio**, keeping this app in the `nithika-portfolio` folder. Vite uses `base: '/New-Portfolio/'`. The published URL is https://nithikajayarathne5664.github.io/New-Portfolio/.
 
 When you are ready to publish, choose **Settings → Pages → Build and deployment → Source → GitHub Actions** in that repository. The included `.github/workflows/deploy.yml` runs on pushes to `main` or manual dispatch, installs with `npm ci`, lints, builds, uploads `dist`, and deploys with official Pages actions. It declares `pages: write`, `id-token: write`, and the `github-pages` environment.
 

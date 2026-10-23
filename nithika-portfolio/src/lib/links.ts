@@ -17,6 +17,6 @@ export function emailLink(value?: string): string | undefined {
 export function resumeLink(value?: string): string | undefined {
   const path = value?.trim()
   if (!path) return undefined
-  const link = path.startsWith('/') && !path.startsWith('//') ? path : webLink(path)
+  const link = path.startsWith('/') && !path.startsWith('//') ? `${import.meta.env.BASE_URL}${path.slice(1)}` : webLink(path)
   return link && /\.pdf(?:[?#]|$)/i.test(link) ? link : undefined
 }
